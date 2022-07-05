@@ -29,7 +29,13 @@ function start() {
   //Checks if the user has entered something.
   CheckUserName();
   //Asks for and stores the user's age in the userName variable
+userAge = prompt("Welcome to the movie selector program " + userName + ", how old are you?");
+  //Checks if the user has entered a valid age.
+  CheckUserAge();
+  alert("Welcome to the movie selector program " + userName + ", you are " + userAge + " years old.")
 
+
+  
 //Functions
 function CheckUserName() {
   while (userName == null || userName == "" || userName == " " || !isNaN(userName)) {
@@ -37,3 +43,10 @@ function CheckUserName() {
   }
 }
 //Checks if the user has entered something.
+function CheckUserAge() {
+  while (userAge < MINAGE || userAge > MAXAGE || isNaN(userAge)) {
+    userAge = prompt("Sorry " + userName + ", '" + userAge + "' is not a valid age. Please enter an age that is between 5 and 100. \nIf you are younger than 5, or older than 100, then maybe you shouldn’t be watching a scary movie.");
+  }
+}
+//Checks if the user has entered a valid age.
+
