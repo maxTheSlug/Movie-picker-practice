@@ -19,7 +19,7 @@ var userName;
 var userAge;
 //Number variable that saves the user's scare limit
 var userScareLimit;
-//Boolean variable that is used in error mesaage while loops; while invalidValue = true, etc. NOT NEEDED.
+//Boolean variable that is used in error message while loops; while invalidValue = true, etc. NOT NEEDED.
 //var invalidValue = true;
 
 //Main code
@@ -33,8 +33,9 @@ userAge = prompt("Welcome to the movie selector program " + userName + ", how ol
   //Checks if the user has entered a valid age.
   CheckUserAge();
   alert("Welcome to the movie selector program " + userName + ", you are " + userAge + " years old.")
+alert("As this is a rainy Sunday afternoon, you might like to watch a scary movie. \nHere is a list of available scary movies. \n" + MOVIENAME[0] + " \n" + MOVIENAME[4] + " \n" + MOVIENAME[2] + " \n" + MOVIENAME[1] + " \n" + MOVIENAME[3] + " \n" + MOVIENAME[5]);
 
-
+}
   
 //Functions
 function CheckUserName() {
