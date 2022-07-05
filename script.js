@@ -29,4 +29,11 @@ function start() {
   //Checks if the user has entered something.
   CheckUserName();
   //Asks for and stores the user's age in the userName variable
-  
+
+//Functions
+function CheckUserName() {
+  while (userName == null || userName == "" || userName == " " || !isNaN(userName)) {
+    userName = prompt("Welcome to the movie selector program, what is your name?");
+  }
+}
+//Checks if the user has entered something.
