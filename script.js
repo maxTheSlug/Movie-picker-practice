@@ -19,5 +19,14 @@ var userName;
 var userAge;
 //Number variable that saves the user's scare limit
 var userScareLimit;
-//Boolean variable that is used in error mesaage while loops; while invalidValue = true, etc
+//Boolean variable that is used in error mesaage while loops; while invalidValue = true, etc. NOT NEEDED.
 //var invalidValue = true;
+
+//Main code
+function start() {
+  //Asks for and stores the user's name in the userName variable
+  userName = prompt("Welcome to the movie selector program, what is your name?");
+  //Checks if the user has entered something.
+  CheckUserName();
+  //Asks for and stores the user's age in the userName variable
+  
